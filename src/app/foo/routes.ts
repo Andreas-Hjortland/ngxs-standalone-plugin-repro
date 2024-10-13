@@ -11,6 +11,7 @@ export default [
         component: FooComponent,
         providers: [
             provideStates([FooState], withNgxsPlugin(FooPlugin)),
+            /*
             {
                 provide: ENVIRONMENT_INITIALIZER,
                 multi: true,
@@ -20,6 +21,7 @@ export default [
                     injector.get(pluginManagerToken);
                 }
             }
+            */
         ]
     }
 ] satisfies Routes;
